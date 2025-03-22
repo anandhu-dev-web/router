@@ -9,6 +9,8 @@ import Product from "./components/pages/Product";
 import Login from "./components/pages/Login";
 import Services from "./components/pages/Services";
 import Register from "./components/pages/Register";
+import AddProducts from "./components/pages/AddProducts";
+
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
       <Route path="/cart" element={<Cart/>}/>
       <Route path="/register" element={<Register/>}/>
       <Route path="/login" element={<Login/>}/>
+      <Route path="/addproducts" element={<AddProducts/>}/>
 
     </Routes>
     

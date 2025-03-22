@@ -29,6 +29,7 @@ function Register() {
         terms: false,
       }}
     >
+      
       {({ handleSubmit, handleChange, values, touched, errors }) => (
         <Container>
           <Row>

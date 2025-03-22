@@ -11,8 +11,8 @@ function Contact() {
   const { Formik } = formik;
 
   const schema = yup.object().shape({
-    firstName: yup.string().required(),
-    lastName: yup.string().required(),
+    firstName: yup.string().required().min(3,"first name must have more than 3 letters"),
+    lastName: yup.string().required("last name is not enterd"),
     username: yup.string().required(),
     city: yup.string().required(),
     state: yup.string().required(),
